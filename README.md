@@ -25,6 +25,10 @@ python SerialDebugger.py
 下载release中压缩包，解压运行MA.exe(使用pyinstaller打包)即可
 
 ## 说明
+
+MA文件夹内为MCU驱动文件，将MA添加到工程并填补MCU串口回调函数即可使用
+
+
 若使用release中
 1. 只支持发送整数且大小为int16, 即范围为-32768 ~ 32767，其余类型数据可自行缩放取整
 2. 不支持更改数据包格式，若需更改可自行修改SerialDebugger.py
