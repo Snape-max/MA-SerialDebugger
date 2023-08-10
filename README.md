@@ -26,6 +26,8 @@ python SerialDebugger.py
 
 ## 说明
 
+支持串口收发
+最多支持4通道波形显示
 MA文件夹内为MCU驱动文件，将MA添加到工程并填补MCU串口回调函数即可使用
 
 
