@@ -7,7 +7,7 @@
 #define Frame_E_1 0xcc
 #define Frame_E_2 0xff
 
-void MA_SendData(uint_8 *data, int8 datalen);
+void MA_SendData(int16 *data, int8 datalen);
 
 
 
