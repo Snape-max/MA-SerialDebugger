@@ -1,0 +1,6 @@
+ipython~=8.11.0
+traitlets~=5.9.0
+numpy~=1.24.1
+pyqtgraph~=0.13.3
+PyQt5~=5.15.9
+pyserial~=3.5
