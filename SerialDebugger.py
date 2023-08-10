@@ -17,7 +17,7 @@ frame_b_2 = b'\xac'
 
 # 帧尾
 frame_e_1 = b'\xcc'
-frame_e_2 = b'\xff'
+frame_e_2 = b'\x89'
 
 
 def get_serial_com():
@@ -192,10 +192,11 @@ class SerialDebugger(QMainWindow):
         if start_index_2 - start_index_1 == 1 and end_index_2 - end_index_1 == 1:
             self.data_frame = self.data_buffer[start_index_2 + 1:end_index_1]
             self.data_buffer = self.data_buffer[end_index_2 + 1:]
+            print(self.data_frame)
         else:
             self.data_buffer = self.data_buffer[end_index_2 + 1:]
-        if len(self.data_buffer) > 1000:
-            self.data_buffer = b''
+        # if len(self.data_buffer) > 1000:
+        #     self.data_buffer = b''
 
     def serial_send(self):
         if self.ser != None:
