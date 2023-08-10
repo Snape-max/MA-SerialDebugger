@@ -227,7 +227,7 @@ class SerialDebugger(QMainWindow):
         ch = self.poltch.currentIndex()
         if ch != 0 and self.data_frame != None:
             if len(self.data_frame) != 0:
-                data = struct.unpack("H" * ch, self.data_frame[:ch * 2])
+                data = struct.unpack("h" * ch, self.data_frame[:ch * 2])
                 data_len = len(data)
                 for i in range(data_len):
                     self.plot_data[i].insert(0, data[i])
